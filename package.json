@@ -4,26 +4,26 @@
   "private": true,
   "dependencies": {
     "@burner-wallet/assets": "^1.1.5",
-    "@burner-wallet/core": "0.0.10",
-    "autolinker": "^2.2.1",
-    "axios": "^0.18.0",
+    "@burner-wallet/core": "1.0.0",
+    "autolinker": "^3.14.0",
+    "axios": "^0.21.3",
     "base64url": "^3.0.1",
     "bfj": "6.1.1",
     "bootstrap": "^4.1.3",
     "cors": "^2.8.4",
     "crypto": "^1.0.1",
     "dapparatus": "^1.0.95",
-    "eccrypto": "^1.1.0",
-    "eth-crypto": "^1.3.2",
+    "eccrypto": "^1.1.6",
+    "eth-crypto": "^1.9.0",
     "eth-ecies": "^1.0.3",
     "eth-ens-namehash": "^2.0.8",
     "ethereum-mnemonic-privatekey-utils": "^1.0.5",
     "ethereumjs-tx": "^1.3.7",
     "ethereumjs-util": "^6.0.0",
-    "ethers": "^4.0.20",
+    "ethers": "^4.0.49",
     "ethjs-ens": "^2.0.1",
-    "helmet": "^3.14.0",
-    "i18next": "^13.1.5",
+    "helmet": "^3.21.1",
+    "i18next": "^19.8.5",
     "i18next-browser-languagedetector": "^2.2.4",
     "qrcode-reader": "^1.0.4",
     "qrcode.react": "^0.8.0",
@@ -43,14 +43,17 @@
     "react-qr-reader": "^2.1.1",
     "react-scroll": "^1.7.10",
     "react-stack-grid": "^0.7.1",
-    "tabookey-gasless": "^0.3.3-a",
-    "web3": "1.0.0-beta.33"
+    "tabookey-gasless": "^0.4.2",
+    "web3": "1.7.5",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "PORT=3000 node scripts/start.js",
     "start-local": "PORT=3000 REACT_APP_MODE=local npx node scripts/start.js",
     "build": "node --max-old-space-size=4000 scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -166,5 +169,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "snyk": true
 }
