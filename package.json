@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@burner-wallet/assets": "^1.1.5",
-    "@burner-wallet/core": "0.0.10",
+    "@burner-wallet/core": "1.0.0",
     "autolinker": "^2.2.1",
     "axios": "^0.18.0",
     "base64url": "^3.0.1",
@@ -43,7 +43,7 @@
     "react-qr-reader": "^2.1.1",
     "react-scroll": "^1.7.10",
     "react-stack-grid": "^0.7.1",
-    "tabookey-gasless": "^0.3.3-a",
+    "tabookey-gasless": "^0.3.3",
     "web3": "1.0.0-beta.33"
   },
   "scripts": {
